@@ -1,0 +1,130 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* Game layout design */
+
+  .game-container {
+    width: 1500px;
+    padding: 60px 120px;
+  }
+
+  .game-container > div {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .game-container img {
+    width: 130px;
+  }
+
+  .game-container button {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 150px;
+    background-color: firebrick;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: rgb(205, 104, 104);
+  }
+
+  .play-button,
+  .reset-button {
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 700;
+    
+  }
+
+  .result-container {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .result-container > div {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .bet-container {
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+  }
+
+  .bet-container > div {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .note {
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .bet-cell {
+    position: relative;
+  }
+
+  .bet-number {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+  .bet-cell.disabled {
+      pointer-events: none;
+      opacity: 0.5;
+  }

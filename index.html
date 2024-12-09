@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Game Bầu Cua</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="result-container">
+            <div class="result1 result">
+                <img src="./imgs/gourd.png" alt="Result image">
+            </div>
+            <div class="result2 result">
+                <img src="./imgs/gourd.png" alt="Result image">
+            </div>
+            <div class="result3 result">
+                <img src="./imgs/gourd.png" alt="Result image">
+            </div>
+        </div>
+        <div class="play-button">
+            <button>Quay</button>
+        </div>
+        <div class="bet-container">
+            <div class="gourd-option bet-cell" data-name="Bầu">
+                <img src="./imgs/gourd.png" alt="Choice image">
+                <p class="gourd-bet bet-number">0</p>
+            </div>
+            <div class="crab-option bet-cell" data-name="Cua">
+                <img src="./imgs/crab.png" alt="Choice image">
+                <p class="gourd-bet bet-number">0</p>
+            </div>
+            <div class="shrimp-option bet-cell" data-name="Tôm">
+                <img src="./imgs/shrimp.png" alt="Choice image">
+                <p class="gourd-bet bet-number">0</p>
+            </div>
+            <div class="fish-option bet-cell" data-name="Cá">
+                <img src="./imgs/fish.png" alt="Choice image">
+                <p class="gourd-bet bet-number">0</p>
+            </div>
+            <div class="deer-option bet-cell" data-name="Nai">
+                <img src="./imgs/Deer.png" alt="Choice image">
+                <p class="gourd-bet bet-number">0</p>
+            </div>
+            <div class="chicken-option bet-cell" data-name="Gà">
+                <img src="./imgs/chicken.png" alt="Choice image">
+                <p class="gourd-bet bet-number">0</p>
+            </div>
+        </div>
+        <div class="reset-button">
+            <button>Đặt lại</button>
+        </div>
+        <div class="note">
+            <p>Lưu ý:</p>
+            <p>- Số lần đặt ở một "Hình" sẽ là số lần xuất hiện của các "Hình" trên "Kết quả"</p>
+            <p>- Tổng số điểm đặt trong một lần, tối đa là 3</p>
+        </div>
+    </div>
+</body>
+</html>
